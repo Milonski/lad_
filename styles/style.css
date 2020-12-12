@@ -1,0 +1,161 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+.content {
+  background-image: url("../images/pattern.png");
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.header {
+  padding: 100px 0 74px;
+}
+
+.header__timer {
+  height: 100%;
+}
+
+.header__logo {
+  width: 400px;
+}
+
+.color-line {
+  height: 62px;
+  width: 100%;
+  background: rgb(236, 127, 11);
+  background: linear-gradient(270deg, #c6086a 0%, #ec7f0b 100%);
+  mix-blend-mode: multiply;
+}
+
+.main-content {
+  padding: 100px 0 238px;
+}
+
+.main-content__header {
+  margin-bottom: 76px;
+  width: 1070px;
+}
+
+.messages {
+  margin-bottom: 40px;
+}
+
+.messages__item {
+  width: 586px;
+  height: 110px;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 20px 28px;
+  border-radius: 6px;
+}
+
+.messages__item--color {
+  background: linear-gradient(180deg, #ec7f0b 0%, #c6086a 100%);
+  margin-bottom: 64px;
+  margin-left: 24px;
+}
+
+.messages__item--gray {
+  background-color: #828282;
+  width: 510px;
+  margin-left: -64px;
+}
+
+.firework {
+  margin-top: 180px;
+}
+
+.firework-group__circle {
+  background-color: #004bff;
+  border-radius: 50%;
+  width: 802px;
+  height: 802px;
+  color: white;
+}
+
+.firework-group {
+  position: relative;
+}
+
+.firework-group::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../images/firework.png");
+  width: 392px;
+  height: 392px;
+  top: -140px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.firework-group::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../images/firework.png");
+  width: 186px;
+  height: 186px;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 224px;
+}
+
+.firework-group__big {
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.firework-group__small {
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.programm-list__title {
+  margin-bottom: 78px;
+}
+
+.programm-list {
+  margin-top: 124px;
+}
+
+.programm-list__time {
+  color: #ff0000;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 84px;
+}
+
+.programm-list__text {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 54px;
+}
+
+.media-body {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.programm-list__item {
+  margin-bottom: 32px;
+}
+
+.red-banner {
+  background-color: #e42320;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  border-radius: 6px;
+  padding: 22px 0;
+  margin-top: 88px;
+  margin-bottom: 96px;
+}
