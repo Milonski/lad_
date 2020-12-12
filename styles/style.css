@@ -17,7 +17,7 @@ html {
 }
 
 .header__logo {
-  width: 400px;
+  width: 100%;
 }
 
 .color-line {
@@ -34,7 +34,7 @@ html {
 
 .main-content__header {
   margin-bottom: 76px;
-  width: 1070px;
+  width: 100%;
 }
 
 .messages {
@@ -42,7 +42,6 @@ html {
 }
 
 .messages__item {
-  width: 586px;
   color: white;
   font-weight: 500;
   font-size: 20px;
@@ -59,7 +58,6 @@ html {
 
 .messages__item--gray {
   background-color: #828282;
-  width: 510px;
   margin-left: -64px;
 }
 
@@ -67,43 +65,19 @@ html {
   margin-top: 180px;
 }
 
-.firework-group__circle {
-  background-color: #004bff;
-  border-radius: 50%;
-  width: 802px;
-  height: 802px;
-  color: white;
-}
-
 .firework-group {
+  color: white;
   position: relative;
 }
 
-.firework-group::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-image: url("../images/firework.png");
-  width: 392px;
-  height: 392px;
-  top: -140px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.firework-group__img {
+  width: 100%;
+  z-index: 0;
 }
 
-.firework-group::after {
-  content: "";
-  display: block;
+.firework-group__text {
   position: absolute;
-  background-image: url("../images/firework.png");
-  width: 186px;
-  height: 186px;
-  bottom: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  left: 224px;
+  z-index: 2;
 }
 
 .firework-group__big {
@@ -229,13 +203,19 @@ h1.rooms__title {
   background-color: #c7c7c7;
 }
 
-.timeline__back h1.timeline__title {
-  font-weight: bold;
-  font-size: 58px;
+.timeline__title {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.timeline__title-text {
+  font-weight: 700;
+  font-size: 56px;
   color: white;
   z-index: 2;
   margin-bottom: 0;
   text-transform: uppercase;
+  padding: 30px 0;
 }
 
 .timeline-list {
@@ -243,20 +223,10 @@ h1.rooms__title {
   margin-top: 120px;
 }
 
-.timeline-list::before {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 1245px;
-  background-color: #ff0000;
-  position: absolute;
-  left: -2px;
-  top: 30px;
-}
-
 .timeline-item {
   position: relative;
   margin-left: 42px;
+  margin-bottom: 20px;
 }
 
 .timeline-item::before {
@@ -271,6 +241,21 @@ h1.rooms__title {
   left: -54px;
 }
 
+.timeline-item::after {
+  content: "";
+  display: block;
+  width: 5px;
+  background-color: #ff0000;
+  position: absolute;
+  left: -44px;
+  top: 30px;
+  bottom: -50px;
+}
+
+.timeline-item:last-child:after {
+  width: 0;
+}
+
 .timeline-item__time {
   font-size: 64px;
   color: black;
@@ -281,4 +266,10 @@ h1.rooms__title {
 .timeline-item__text {
   font-size: 32px;
   color: black;
+}
+
+@media (min-width: 320px) and (max-width: 790px) {
+  .firework-group__text {
+    transform: scale(0.3);
+  }
 }
