@@ -131,6 +131,14 @@ html {
   padding: 22px 0;
   margin-top: 88px;
   margin-bottom: 96px;
+  text-align: center;
+  transition: background-color 0.3s linear;
+}
+
+.red-banner:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #c71e1c;
 }
 
 .rooms {
