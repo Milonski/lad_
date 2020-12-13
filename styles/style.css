@@ -12,12 +12,20 @@ html {
   padding: 100px 0 74px;
 }
 
+.header__buttons {
+  margin-top: 64px;
+}
+
 .header__timer {
   height: 100%;
 }
 
 .header__logo {
   width: 100%;
+}
+
+.clock {
+  overflow: hidden;
 }
 
 .color-line {
@@ -280,4 +288,29 @@ h1.rooms__title {
   .firework-group__text {
     transform: scale(0.3);
   }
+
+  .btn {
+    margin-bottom: 16px;
+  }
+}
+
+.btn {
+  font-size: 20px;
+  line-height: 50px;
+  display: inline-block;
+  height: 50px;
+  padding: 0 40px;
+  transition: 0.3s;
+  vertical-align: top;
+  color: #fff;
+  border-radius: 10px;
+  background: #ed1e80;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: #d21870;
+  color: #fff;
 }
