@@ -9,11 +9,7 @@ html {
 }
 
 .header {
-  padding: 100px 0 74px;
-}
-
-.header__buttons {
-  margin-top: 64px;
+  padding: 100px 0 32px;
 }
 
 .header__timer {
@@ -304,13 +300,13 @@ h1.rooms__title {
   vertical-align: top;
   color: #fff;
   border-radius: 10px;
-  background: #ed1e80;
+  background: #d22c4e;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
 }
 
 .btn:hover {
   text-decoration: none;
-  background-color: #d21870;
+  background-color: #d22c4e;
   color: #fff;
 }
